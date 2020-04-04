@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block  body %}
+
+<section id="1">
+    <div class="container">
+<div  class="title">
+    <h1 style="font-family: 'Sriracha', cursive;font-size: 80px;color: #4D306E;" class="text-center mt-5">Hakkımızda</h1>
+    <br>
+    <i style="font-size: 40px; position: absolute;
+    padding-left: 530px;" class="fas fa-align-center text-center"></i>
+</div>
+<div class="jumbotron mt-5">
+<div class="row">
+    <div class="col">
+
+        <img src="{{url_for('static',filename='new2.jpg')}}" alt="">
+    </div>
+    <div style="margin-left: -100px;" class="col">
+        <h1 style="font-family: 'Sriracha', cursive;font-size: 50px;color: #4D306E;">Merhaba<i style="font-size: 10px;" class="fas fa-leaf"></i></h1>
+        <div class="row">
+            <div class="col-10">
+        <hr>
+    </div>
+    <div class="col-2"><i style="font-size: 30px;margin-top: -50px;" class="fas fa-leaf"></i></div>
+        </div>
+        <br><br>
+        <p style="font-family: 'Sriracha', cursive;letter-spacing: .5px;color: #4D306E;">Lojistik Nedir? <br>
+1973'de faaliyete başlayarak, öncelikle Borusan Holding'e bağlı şirketlere ve zaman içinde boş kapasitesini değerlendirmek üzere grup dışı şirketlere de hizmet veren Boru Nakliyat, Bortrans ve Borusan Dağıtım kuruluşlarımız tek isim altında birleşmiş ve 2000 yılı ile birlikte Borusan Lojistik adı altında yeniden yapılanma sürecine girmiştir. Bu yapılanmanın amacı Borusan Lojistik firmasının mevcut nakliye, gümrükleme, liman işletmeciliği, depolama gibi temel hizmetlerinin, kapıdan kapıya servis veren bir lojistik organizasyonun oluşturulması ile değerlendirilmesi ve bu hizmetlerin grup dışına açılımı ile ülkemizde katma değer yaratmaktadır. </p>
+        <br>
+        <p style="font-family: 'Sriracha', cursive;letter-spacing: .5px;color: #4D306E;">Lojistik Tanımı
+Amacımız, gazetelerde okuduğumuz, sokaklarda gördüğümüz "Lojistik" sözcüğünün ne ifade ettiğini belirlemek ve bunu tüm ihtiyaç sahiplerine aktarmaktır. Üyesi olduğumuz, dünya üzerindeki tüm lojistik hizmet veren kuruluşların birlikteliği ile oluşmuş olan Council of Logistics Management kuruluşu lojistik ne demek sorusunu şu şekilde cevaplamıştır; "Lojistik müşterilerin ihtiyaçlarını karşılamak üzere her türlü ürün, servis hizmeti ve bilgi akışının, başlangıç noktasından tüketildiği son noktaya kadar olan tedarik zinciri içindeki hareketinin, etkili ve verimli bir şekilde planlanması, uygulanması, taşınması, depolanması ve kontrol altında tutulması hizmetidir".
+
+Amerika Birleşik Devletlerinde başlayan, Avrupa'ya Amerikan şirketleri ile geçen bu hizmet dalı ülkemizde temel işleri nakliye olan nakliyeci kuruluşların veya temel işleri depolama olan depolama kuruluşlarının isimlerinin arkasına bir Lojistik kelimesi eklemeleri ile başlamıştır. </p>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="second">
+    <div class="container">
+        <div class="title">
+    <h1 class="text-center">Sosyal Medyada Takip Edin</h1>
+    </div>
+    <div class="body mt-5">
+        <a href=""><i style="margin-left: 120px;" class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><img  src="{{url_for('static',filename='bumerang-yazarkafe-yazarlari-12580-oval.png')}}" alt=""></a>
+        <a href=""> <img width="350" src="{{url_for('static',filename='bumerang-25050-white.gif')}}" alt=""></a>
+    </div>
+
+
+
+</div>
+</section>
+
+{% endblock  %}

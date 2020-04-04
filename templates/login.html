@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% from "/includes/formhelpers.html" import render_field %}
+
+<section id="login">
+
+    <div class="container">
+
+        <div class="body jumbotron">
+
+            <form method="POST">
+                <dl>
+
+            <div class="row">
+                <div style="margin: auto;background-color: #E6E8EC;" class="col-1">
+                  <i style="margin-top: 10px; margin-left: 10px; " class="fas fa-user"></i>
+                </div>
+                <div style="margin: auto;" class="col-11 ">
+                    {{ render_field(form.username,class="form-control",placeholder="Kullanıcı Adı",style="margin-left:-50px;width: 50%;margin-bottom: 20px;") }}
+                  </div>
+              </div>
+              <div class="row">
+                <div style="margin: auto;background-color: #E6E8EC;" class="col-1">
+                  <i style="margin-top: 10px; margin-left: 10px; " class="fas fa-lock"></i>
+                </div>
+                <div style="margin: auto;" class="col-11 ">
+                    {{ render_field(form.password,class="form-control",style="margin-left:-50px;width: 50%;margin-bottom: 20px;",placeholder="Parola Giriniz") }}
+                  </div>
+              </div>
+            </dl>
+            <button type="submit" class="btn btn-warning">Giriş Yap</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

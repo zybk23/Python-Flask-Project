@@ -1,0 +1,111 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+{% from "/includes/formhelpers.html" import render_field %}
+<section id="register">
+<div class="container">
+    <div class="head">
+    <h1 class="text-center">Truck-Go Üyelik Formu</h1>
+
+    <i class="fas fa-truck"></i>
+
+
+
+</div>
+
+<div class="body jumbotron">
+
+
+<form method=post>
+    <dl>
+        <div class="row">
+            <div style="margin: auto;background-color: #E6E8EC;" class="col-1">
+              <i style="margin-top: 10px; margin-left: 10px; " class="fas fa-file-signature"></i>
+            </div>
+            <div style="margin: auto;" class="col-11 ">
+                {{ render_field(form.name,placeholder="Adınızı Soyadınız",class="form-control",style="margin-left:-50px;width: 50%;margin-bottom: 20px;") }}
+              </div>
+          </div>
+      
+      <div class="row">
+        <div style="margin: auto;background-color: #E6E8EC;" class="col-1">
+          <i style="margin-top: 10px; margin-left: 10px; " class="fas fa-user"></i>
+        </div>
+        <div style="margin: auto;" class="col-11 ">
+            {{ render_field(form.username,class="form-control",placeholder="Kullanıcı Adı",style="margin-left:-50px;width: 50%;margin-bottom: 20px;") }}
+          </div>
+      </div>
+      <div class="row">
+        <div style="margin: auto;background-color: #E6E8EC;" class="col-1">
+          <i style="margin-top: 10px; margin-left: 10px; " class="fas fa-envelope-square"></i>
+        </div>
+        <div style="margin: auto;" class="col-11 ">
+            {{ render_field(form.email,placeholder="E-mail Adresi",class="form-control",style="margin-left:-50px;width: 50%;margin-bottom: 20px;") }}
+          </div>
+      </div>
+      
+      
+      <div class="row">
+          <div style="margin: auto;background-color: #E6E8EC;" class="col-1">
+            <i style="margin-top: 10px; margin-left: 10px; " class="fas fa-lock"></i>
+          </div>
+          <div style="margin: auto;" class="col-11 ">
+              {{ render_field(form.password,class="form-control",style="margin-left:-50px;width: 50%;margin-bottom: 20px;",placeholder="Parola Giriniz") }}
+            </div>
+        </div>
+        <div class="row">
+            <div style="margin: auto;background-color: #E6E8EC;" class="col-1">
+              <i style="margin-top: 10px; margin-left: 10px; " class="fas fa-clipboard-check"></i>
+            </div>
+            <div style="margin: auto;" class="col-11 ">
+                {{ render_field(form.confirm,class="form-control",style="margin-left:-50px;width: 50%;margin-bottom: 20px;",placeholder="Parola Doğrulayınız") }}
+              </div>
+          </div>
+          <div class="row">
+            <div style="" class="col-1">
+              {{ render_field(form.sex,class="radio",type="radio",style="margin-left:13px;transform: scale(1.5);") }}
+              Erkek
+            </div>
+            <div style="margin: auto;" class="col-11 ">
+                {{ render_field(form.sex,class="radio",type="radio",style="margin-left:13px;transform: scale(1.5);") }}
+                Kadın
+              </div>
+          </div>
+          <div class="row">
+            <div style="margin: auto;background-color: #E6E8EC;" class="col-1">
+              <i style="margin-top: 10px; margin-left: 10px; " class="fas fa-calendar-day"></i>
+            </div>
+            <div style="margin: auto;" class="col-11 ">
+              {{ render_field(form.date,type="date",class="form-control",style="margin-left:-50px;width: 25%;margin-bottom: 20px;") }}
+          </div>
+          
+      
+          
+     
+      
+      
+    </dl>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>
+</div>
+</section>
+<section id="second">
+    <div class="container">
+        <div class="title">
+    <h1 class="text-center">Sosyal Medyada Takip Edin</h1>
+    </div>
+    <div class="body mt-5">
+        <a href=""><i style="margin-left: 120px;" class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><img  src="{{url_for('static',filename='bumerang-yazarkafe-yazarlari-12580-oval.png')}}" alt=""></a>
+        <a href=""> <img width="350" src="{{url_for('static',filename='bumerang-25050-white.gif')}}" alt=""></a>
+    </div>
+
+
+
+</div>
+</section>
+{% endblock %}

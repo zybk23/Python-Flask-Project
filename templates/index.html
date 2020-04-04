@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block  body %}
+
+<header id="index">
+<div class="container">
+    <h1>Truck-Go</h1>
+    <h5>Sizin Ürününüz, Sizin değeriniz....</h5>
+
+</div>
+</header>
+<section id="indexfirst">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-4">
+                <img width="250" height="auto" src="{{url_for('static',filename='CategoryOne@2x.png')}}" alt="">
+                <br>
+                <p><a href="">Yazışmanın Dijitalleşmesi</a></p>
+        </div>
+        <div class="col-4">
+            <img width="250" height="auto" src="{{url_for('static',filename='CategoryTwo@2x.png')}}" alt="">
+            <br>
+            <p><a style="margin: auto;" href="">Görüntünün Digital Ortama Aktarımının Kolaylaşması</a></p>
+    </div>
+    <div class="col-4">
+        <img width="250" height="auto" src="{{url_for('static',filename='CategoryThree@2x.png')}}" alt="">
+        <br>
+        <p><a href="">Yükün Güvenli Ulaşımı</a></p>
+</div>
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock  %}

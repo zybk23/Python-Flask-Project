@@ -1,0 +1,11 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  {% for category, message in messages %}
+    <ul style="list-style: none;font-size: 30px;" class="flashes alert alert-{{category}} text-center">
+    
+      <li class="{{ category }}">{{ message }}</li>
+    
+    </ul>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
